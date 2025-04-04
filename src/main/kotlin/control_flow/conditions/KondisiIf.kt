@@ -1,4 +1,4 @@
-package com.dicodingdelfi.kotlin.control_flow
+package com.dicodingdelfi.kotlin.control_flow.conditions
 
 fun main() {
     val d: Int

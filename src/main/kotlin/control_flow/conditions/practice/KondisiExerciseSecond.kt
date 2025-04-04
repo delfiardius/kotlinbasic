@@ -1,4 +1,4 @@
-package com.dicodingdelfi.kotlin.control_flow
+package com.dicodingdelfi.kotlin.control_flow.conditions.practice
 
 fun main() {
     val button = "A"
