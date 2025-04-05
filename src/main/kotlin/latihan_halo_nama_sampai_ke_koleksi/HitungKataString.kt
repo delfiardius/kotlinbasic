@@ -31,3 +31,22 @@ fun main() {
 * 2. Pemisahan kata: Pendekatan .split('') hanya memisahkan berdasarkan spasi tunggal. Jika terdapat beberapa
 *    spasi berturut-turut atau karakter seperti tab (\t), maka mungkin hasilnya tidak akurat. AAnda dapat
 *    menggunakan fungsi split(Regex("\\s+")) untuk memisahkan kata berdasarkan semua jenis spasi.*/
+
+// Perbedaan count dan size
+/*
+* 1. .size:
+*       - Merupakan properti bawaan dari koleksi sepereti List, Set, atau Array
+*       - Karena properti, akses ke .size sangat cepat karena nilainya sudah tersedia tanpa perlu perhitungan ulang.
+*       - Cocok digunakan saat Anda hanya ingin mengetahui jumlah elemen secara langsung.
+* 2. .count()
+*       - Merupakan fungsi yang dapat digunakan pada koleksi apa pun.
+*       - Tanpa parameter, .count() mirip dengan .size karena menghitung seluruh elemen.
+*       - Dengan parameter berupa lambda expression, .count() dapat digunakan untuk menghitung elemen yang
+*         memenuhi kondisi tertentu. Contohnya
+*   val numbers = listOf(1,2,3,4,5)
+*   val evenCount = numbers.count { it % 2 }
+*   println(evenCount)
+* Ringkasan:
+* - Gunakan .size jika Anda hanya ingin mengetahui jumlah elemen tanpa kondisi khusus.
+* - Gunakan .count() jika Anda membutuhkan fleksibilitas untuk menghitung elemen berdasarkan kriteria tertentu.
+* */
